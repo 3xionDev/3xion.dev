@@ -13,6 +13,8 @@
   <link rel="icon" href="img/blackhole.png">
 </head>
 <body class="body">
+  <canvas id="matterCanvas" width="100" height="200" style="position: absolute; top: 0; left: 0; z-index: -1"></canvas>
+
   <div id="headcontainer">
     <h1 id="header">3xion</h1>
   </div>
@@ -48,7 +50,10 @@
     <h5 id="fullList">A full list of my projects can be found on my github.</h5>
   </div>
   <img src="img/blackhole.png" id="blackhole">
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+    <script src="bg.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
