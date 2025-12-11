@@ -3,6 +3,8 @@ body {
   animation: 3s ease-in-out 0s infinite alternate bg;
   cursor: none;
   user-select: none;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes bg {
@@ -43,7 +45,10 @@ body {
 
 #headcontainer {
   background-color: #4d58ff;
-  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  min-width: 50%;
+  width: 500px;
   height: 75px;
   margin: auto;
   border-radius: 10px;
@@ -52,9 +57,9 @@ body {
   #header {
     color: #131967;
     font-family: Baumans;
-    position: relative;
+    /* position: relative;
     top: 25%;
-    left: 3%;
+    left: 3%; */
   }
 }
 
@@ -64,7 +69,8 @@ body {
 
 #container {
   background-color: #2f3cf4;
-  width: 50%;
+  min-width: 50%;
+  width: 500px;
   height: 690px;
   margin: auto;
   position: relative;
@@ -73,6 +79,8 @@ body {
   text-align: center;
   box-shadow: #192194 0px 0px 40px;
   transition-duration: 0.7s;
+  display: flex;
+  flex-direction: column;
 }
 
 #container:hover {
@@ -84,11 +92,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
   color: #4d4d4d;
-  margin: 10px;
-  position: relative;
-  top: 5%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  /*position: relative;
+  top: 5%;*/
   color: #070817;
 }
 
@@ -101,9 +111,10 @@ body {
 
 #box {
   width: 95%;
-  height: 62%;
+  height: 150%;
+  min-height: 50%;
   border-radius: 10px;
-  margin-top: 7%;
+  margin-top: 2%;
   margin-left: 2%;
   background-color: #4d4d4d;
   overflow: auto;
@@ -111,7 +122,10 @@ body {
   border: solid;
   border-width: 1%;
   border-color: #4d4d4d;
+  display: flex;
+  flex-direction: row;
   .projectsBox {
+    flex: 1 0 100%;
     margin-top: 0%;
     margin-left: 0%;
     width: 93%;
@@ -133,10 +147,11 @@ body {
     .images {
       margin-top: 0%;
       margin-left: 0%;
-      width: 70%;
-      height: 50%;
+      max-width: 60%;
+      height: auto;
       border-radius: 10px;
       white-space: wrap;
+      flex: 1 1 100%;
     }
     .projectDescs {
       margin-top: 0%;
